@@ -1,19 +1,67 @@
-import { MapContainer, TileLayer} from "react-leaflet";
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import {useState, useEffect} from "react"
+import '../App.css';
 
+function Map() {
+const [data, setData] = useState("");
 
-function Map(props) {
+useEffect(()=>{
+async function fetchData(){
+    let popup = await fetch('/api')
+    const popUpData = await popup.json();
+    setData(popUpData)
+    // console.log(popup);
+    // console.log(popUpData)
+    
+    }
+    fetchData();
+},[])
+
+console.log(data)
+// console.log(popUpData[0]["Lat and Long"])
 
   return (
-    <MapContainer
-      center={props.center}
-      zoom={13}
-      style={{ height: "600px", width: "600px" }}
-    >
-      <TileLayer
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-      />
-    </MapContainer>
+    <MapContainer center={[44.642635512486834, -72.83265664192449]} zoom={13} style={{height: "70vh", width: "70vw", margin:"auto"}}>
+  <TileLayer
+    attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+  />
+  {/* <Marker position={[data[0]["Lat and Long"]]}>
+    <Popup>
+      A pretty CSS3 popup. <br /> Easily customizable.
+    </Popup>
+  </Marker> */}
+  <Marker position={[44.643660, -72.829120]}>
+    <Popup>
+     My Favorite Things
+    </Popup>
+  </Marker>
+  <Marker position={[44.643660, -72.830640]}>
+    <Popup>
+    Village Tavern
+    </Popup>
+  </Marker>
+  <Marker position={[44.644960, -72.834140]}>
+    <Popup>
+    The Cupboard Deli
+    </Popup>
+  </Marker>
+  <Marker position={[44.61087121631599, -72.81038875341217]}>
+    <Popup>
+    Martell's at the Red Fox
+    </Popup>
+  </Marker>
+  <Marker position={[44.61087121631599, -72.81038875341217]}>
+    <Popup>
+    Martell's at the Red Fox
+    </Popup>
+  </Marker>
+  <Marker position={[44.64600072196071, -72.88233208465354]}>
+    <Popup>
+    Rusty's Pizza and Pie
+    </Popup>
+  </Marker>
+</MapContainer>
   );
 }
 

@@ -1,0 +1,62 @@
+[
+    {
+        "ID":"my-favorite-things", 
+        "web": "https://myfavoritethingsvt1.square.site/",
+        "Name": "My favorite Things On Main",
+        "Cuisine": "American",
+        "Address": "158 S Vermont 108 2nd floor, Jeffersonville, VT 05464",
+        "Lat and Long":  "44.643660,-72.829120",
+        "Phone number": "802-734-7939",
+        "Hours": ["Thursday: 4 PM-8 PM", "Friday: 4 PM-8 PM", "Saturday: 4 PM - 8 PM", "Sunday: 4 PM-8 PM"],
+        "About" : "Online ordering or call for pick up, curb-side, or sit and eat in the spacious dining room!"
+    },
+
+    {
+        "ID":"village-tavern",
+        "web": "https://www.villagetavernvt.com/home",
+        "Name": "Village Tavern",
+        "Cuisine": "American",
+        "Address": "55 Church St, Jeffersonville, VT 05464",
+        "Latitude": "44.643660",
+        "Longitude": "-72.830640",
+        "Phone number": "802-644-6765",
+        "Hours": ["Thursday: 3 PM-9 PM", "Friday: 3 PM - 9 PM", "Saturday: 3 PM-9 PM", "Sunday: 3 PM-9 PM", "Monday: 3 PM-9 PM", "Tuesday: 3 PM-9 PM", "Wednesday:3 PM - 9 PM"],
+        "About" : "Serving great pub fare! A wide variety of choices to meet everyone's taste. Great appetizers, homemade soups and salads"
+    },
+    {
+        "ID":"cupboard",
+        "web": "https://thecupboarddeli.com/",
+        "Name": "The Cupboard Deli",
+        "Cuisine": "Deli",
+        "Address": "4837 VT-15, Jeffersonville, VT 05464",
+        "Latitude": "44.644960",
+        "Longitude": "-72.834140",
+        "Phone number": "802-644-2069",
+        "Hours": ["Thursday: 4:30 AM - 10 PM", "Friday: 4:30 AM - 10 PM", "Saturday: 4:30 AM - 10 PM", "Sunday: 4:30 AM - 10 PM", "Monday: 4:30 AM - 10 PM", "Tuesday: 4:30 AM - 10 PM", "Wednesday: 4:30 AM - 10 PM"],
+        "About" : "Online ordering or call for pick up, curb-side, or sit and eat in the spacious dining room!"  
+    },
+    {
+        "ID":"martells", 
+        "web": "https://www.martellsredfox.com/",
+        "Name": "Martell's at the Red Fox",
+        "Cuisine": "American",
+        "Address": "87 Edwards Rd, Jeffersonville, VT 05464",
+        "Latitude": "44.61087121631599",
+        "Longitude": "-72.81038875341217",
+        "Phone number": "802-644-2069",
+        "Hours": ["Thursday: 4:30 AM - 10 PM", "Friday: 4:30 AM - 10 PM", "Saturday: 4:30 AM - 10 PM", "Sunday: 4:30 AM - 10 PM", "Monday: 4:30 AM - 10 PM", "Tuesday: 4:30 AM - 10 PM", "Wednesday: 4:30 AM - 10 PM"],
+        "About" : "Online ordering or call for pick up, curb-side, or sit and eat in the spacious dining room!"  
+    },
+    {
+        "ID":"rustys", 
+        "web": "https://www.rustyspizzaandpie.com/",
+        "Name": "Rusty's Pizza and Pie",
+        "Cuisine": " Pizzeria",
+        "Address": "48 N Main St #15, Cambridge, VT 05444",
+        "Latitude": "44.64600072196071",
+        "Longitude": "-72.88233208465354",
+        "Phone number": "+802-644-2011",
+        "Hours": ["Sunday: 12 - 8 PM", "Monday: Closed", "Tuesday: Closed", "Wednesday 11 AM - 8 PM", "Thursday: 11 AM - 8 PM", "Friday: 11 AM - 8 PM", "Saturday: 11 AM - 8 PM"],
+        "About" : "Call to place an order. Dining room seating. Family run since the beginning. Located in Cambridge, Vermont. Close to Smugglers Notch."  
+    }
+]

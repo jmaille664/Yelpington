@@ -1,9 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import Map from './components/Map';
 
 function App() {
   return (
-    <h1>Yelpington</h1>
+    <>
+    <h1>Jeffersonville Yelpington</h1>
+    <Map/>
+    
+</>
   );
 }
 
