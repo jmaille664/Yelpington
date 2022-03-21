@@ -5,7 +5,8 @@
         "Name": "My favorite Things On Main",
         "Cuisine": "American",
         "Address": "158 S Vermont 108 2nd floor, Jeffersonville, VT 05464",
-        "Lat and Long":  "44.643660,-72.829120",
+        "Latitude":"44.643660",
+        "Longitude":  "-72.829120",
         "Phone number": "802-734-7939",
         "Hours": ["Thursday: 4 PM-8 PM", "Friday: 4 PM-8 PM", "Saturday: 4 PM - 8 PM", "Sunday: 4 PM-8 PM"],
         "About" : "Online ordering or call for pick up, curb-side, or sit and eat in the spacious dining room!"

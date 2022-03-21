@@ -1,37 +1,57 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import {useState, useEffect} from "react"
+import L from 'leaflet'
 import '../App.css';
 
 function Map() {
+
 const [data, setData] = useState("");
+const [lat, setLat] = useState("")
+const [long, setLong] = useState("")
+ 
+
 
 useEffect(()=>{
-async function fetchData(){
-    let popup = await fetch('/api')
-    const popUpData = await popup.json();
-    setData(popUpData)
-    // console.log(popup);
-    // console.log(popUpData)
-    
-    }
-    fetchData();
+  async function fetchData(){
+  let popup = await fetch('http://localhost:5000')
+  const popUpData = await popup.json();
+  setData(popUpData)
+//  console.log(popup);
+//  console.log(popUpData)
+
+//these do not work to set latitude and longitutue
+// setLat(data[1].Latitude)
+// setLong(data[1].Longitude)
+// console.log(lat)
+// console.log(long)
+
+//This works to show the data and ID
+ //console.log(data[0].ID)
+}
+fetchData();
 },[])
 
-console.log(data)
-// console.log(popUpData[0]["Lat and Long"])
+// let id = data[1].Latitude;
+// console.log(id)
+
+//This also work to show lat/long
+//  console.log(data[1]["Latitude"],data[1]["Longitude"])
 
   return (
+
     <MapContainer center={[44.642635512486834, -72.83265664192449]} zoom={13} style={{height: "70vh", width: "70vw", margin:"auto"}}>
   <TileLayer
     attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
   />
-  {/* <Marker position={[data[0]["Lat and Long"]]}>
+  {/* {L.latLng(lat, long)} */}
+  {/* Marker positions are hardcoded since the above does not work, and the other comments in UseEffect do not work */}
+  <Marker position= {[44.643660,-72.829120]}>
     <Popup>
       A pretty CSS3 popup. <br /> Easily customizable.
     </Popup>
-  </Marker> */}
-  <Marker position={[44.643660, -72.829120]}>
+  </Marker>
+  <Marker position={[44.643660, -72.830640]}>
     <Popup>
      My Favorite Things
     </Popup>
